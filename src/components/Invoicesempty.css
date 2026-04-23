@@ -1,0 +1,53 @@
+.header-flex-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4%; 
+  width: 85%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+body{
+  background-color: #F8F8FB;
+}
+
+.action-items-group{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%; 
+  margin-bottom: 42%;
+}
+
+
+
+.invoices-page-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.empty-state-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  bottom: 40%;  
+  right: 0 auto;
+  left: 0 auto;
+  
+}
+
+.empty-state-container img{
+  width: 241px;
+  height: 200px;
+}

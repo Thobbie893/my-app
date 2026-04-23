@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+.header-flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4%; 
+}
+
+.action-items-group{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.invoices-headline {
+    font-size: 36px;
+    font-family: 'League Spartan';
+    font-weight: 700;
+    margin: 0; 
+}
+
+.invoice-sub-headline {
+    font-size: 13px;
+    color: #888eb0;
+    margin: 0;
+}
+
+.dropdown {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-family: 'League Spartan';
+    font-weight: 700;
+}
+
+.circle{
+    width: 32px;
+    height: 32px;
+    margin-right: 14%;
+}
+
+.new-invoice-CTA-button{
+    padding: 1%;
+    width: 150px;
+    height: 48px;
+    font-size: 15px;
+    font-family: league spartan;
+    background-color: #7C5DFA;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.invoice-list{
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  margin-top: 64px;
+
+}
+
+.invoices-container {
+  width: 100%;
+  max-width: 730px; 
+  margin-top: 0;    
+}
+
+.invoice-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  background-color: white;
+  padding: 16px 32px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.1);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.invoice-card:hover {
+  border: 1px solid #7C5DFA;
+}
+
+.status-container {
+  width: 104px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.paid { 
+    color: #33D6A3;
+    background: rgba(51, 214, 159, 0.06); 
+}
+.pending { 
+    color: #FF8F00; 
+    background: rgba(255, 143, 0, 0.06); 
+}
+.draft { 
+    color: #373B53; 
+    background: rgba(55, 59, 83, 0.06); 
+}
+
+
+
+
+
+
+
