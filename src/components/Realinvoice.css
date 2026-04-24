@@ -57,9 +57,11 @@ body{
     width: 104px;
     height: 40px;
     background-color: #F3ECE4;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
-    padding-block: 4%;
+    padding-block: 8%;
     padding-inline: 4%;
     border-radius: 6px;
     font-size: 15px;

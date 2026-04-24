@@ -2,9 +2,19 @@ import React from 'react'
 import './Realinvoice.css'
 import Editmode from './Editmode'
 import { useState } from 'react'
+import Deletecomponent from './Deletecomponent'
 
 const Realinvoice = () => {
     const [isEditing, setIsEditing] = useState(false)
+    const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false)
+
+    const handleDeleteClick = ()=>{
+        setIsDeleteModalOpen(true)
+    }
+
+    const closeDeleteModal = () =>{
+        setIsDeleteModalOpen(false)
+    }
   return (
 
     <div className='main-container'>
@@ -29,7 +39,7 @@ const Realinvoice = () => {
             
                 <button onClick={()=>setIsEditing(true)} className='edit-button'>Edit</button>
             
-                <button className='delete-button'>Delete</button>
+                <button onClick={handleDeleteClick} className='delete-button'>Delete</button>
             
                 <button className='status-button'>Mark as Paid</button>
             
@@ -114,6 +124,9 @@ const Realinvoice = () => {
             </div>
         </div>
     </div>
+    {isDeleteModalOpen && (
+        <Deletecomponent onCancel={closeDeleteModal}/>
+    )}
     </div>
   )
 }

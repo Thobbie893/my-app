@@ -14,7 +14,7 @@ import Deletecomponent from './components/Deletecomponent';
 function App() {
   return (
     <>
-    <Deletecomponent/>
+    {/* <Deletecomponent/> */}
   <div className='invoice-app-container'>
     <Sidebar/>
     <main>
@@ -22,7 +22,7 @@ function App() {
     </main>
     
     {/* <Invoicesempty/> */}
-    {/* <Realinvoice/> */}
+    <Realinvoice/>
     {/* <Editinvoice/> */}
     {/* <Editmode/> */}
     
