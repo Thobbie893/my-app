@@ -1,4 +1,5 @@
 import React from 'react'
+import './Editinvoice.css'
 
 const Editinvoice = () => {
   return (
@@ -69,10 +70,10 @@ const Editinvoice = () => {
         <div className='overall-receipt-container'>
             <div>
                 <div className='invoice-quantity'>
-                    <div className='item-name'>
+                    <div className='item-design-name'>
                         <p>Item Name</p>
-                        <h4>Banner Design</h4>
-                        <h4>Email Design</h4>
+                        <h3 className='banner-design'>Banner Design</h3>
+                        <h3 className='email-design'>Email Design</h3>
                     </div>
                     <div className='invoice-calculations'>
                         <div className='quantity'>

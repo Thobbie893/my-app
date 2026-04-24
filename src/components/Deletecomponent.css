@@ -1,0 +1,34 @@
+.delete-modal{
+    display: flex;
+    width: 480px;
+    height: 249px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    margin-left: 37%;
+    margin-top: 12%;
+    right: 50;
+    z-index: 9999;
+    background-color: white;
+    padding: 48px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    max-width: 90vw;
+}
+
+.delete-modal p{
+    font-size: 13px;
+    color: #888EB0;
+    margin-top: 12px;
+    line-height: 22px;
+}
+
+.delete-cancel-action-buttons{
+    margin-top: 16px;
+    margin-left: 180px;
+}
+
+.cancel-action-button{
+    margin-right: 8px;
+}

@@ -139,6 +139,27 @@ body{
     bottom: 49px;
 }
 
+.item-design-name{
+    border: none;
+    
+    
+}
+
+h3{
+    display: flex;
+}
+
+.banner-design{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20%;
+}
+
+.email-design{
+   margin-top: 13px;
+}
+
 .invoice-date p, .client-name p, .client-gmail p{
     margin-bottom: 13px;
     color: #7E88C3;
@@ -191,11 +212,11 @@ body{
     padding-inline: 4%;
 }
 
-.item-name h4, .quantity h4, .price h4, .total h4{
+ .quantity h4, .price h4, .total h4{
     margin-top: 32px;
 }
 
-.item-name p, .quantity p, .price p, .total p{
+.item-design-name p, .quantity p, .price p, .total p{
     color: #7E88C3;
 }
 

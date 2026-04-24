@@ -8,9 +8,13 @@ import Invoicesempty from './components/Invoicesempty';
 import Realinvoice from './components/Realinvoice';
 import Editinvoice from './components/Editinvoice';
 import Editmode from './components/Editmode';
+import Deletecomponent from './components/Deletecomponent';
+
 
 function App() {
   return (
+    <>
+    <Deletecomponent/>
   <div className='invoice-app-container'>
     <Sidebar/>
     <main>
@@ -18,11 +22,13 @@ function App() {
     </main>
     
     {/* <Invoicesempty/> */}
-    <Realinvoice/>
+    {/* <Realinvoice/> */}
     {/* <Editinvoice/> */}
     {/* <Editmode/> */}
-  </div>
     
+  </div>
+  
+  </>
   );
 }
 export default App;
