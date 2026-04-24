@@ -18,9 +18,9 @@ function App() {
     </main>
     
     {/* <Invoicesempty/> */}
-    {/* <Realinvoice/> */}
-    <Editinvoice/>
-    <Editmode/>
+    <Realinvoice/>
+    {/* <Editinvoice/> */}
+    {/* <Editmode/> */}
   </div>
     
   );

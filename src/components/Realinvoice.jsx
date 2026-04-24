@@ -1,9 +1,19 @@
 import React from 'react'
 import './Realinvoice.css'
+import Editmode from './Editmode'
+import { useState } from 'react'
 
 const Realinvoice = () => {
+    const [isEditing, setIsEditing] = useState(false)
   return (
+
     <div className='main-container'>
+        {isEditing &&(
+            <>
+            <div className='backdrop' onClick={() => setIsEditing(false)} />
+            <Editmode onClose={() => setIsEditing(false)} />
+            </>
+        )}
     <div className='real-invoice-main-container'>
       <h4>Go back</h4>
       <div className='action-buttons-main-container'>
@@ -17,7 +27,7 @@ const Realinvoice = () => {
         </div>
         <div className='action-buttons-container'>
             
-                <button className='edit-button'>Edit</button>
+                <button onClick={()=>setIsEditing(true)} className='edit-button'>Edit</button>
             
                 <button className='delete-button'>Delete</button>
             

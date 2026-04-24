@@ -2,7 +2,7 @@ import React from 'react'
 import './Editmode.css'
 import calendar from '../images/Shape.png'
 import bin from '../images/Combined Shape (1).png'
-const Editmode = () => {
+const Editmode = ({ onClose }) => {
   return (
     <div className='edit-form'>
       <form>
@@ -111,10 +111,10 @@ const Editmode = () => {
             </div>
             </div>
         </div>
-        <button className='add-CTA-button'>+ Add New Item</button>
+        <button type='button' className='add-CTA-button'>+ Add New Item</button>
         <div className='form-action-buttons'>
-            <button className='cancel-action-button'>Cancel</button>
-            <button className='save-changes-action-button'>Save Changes</button>
+            <button type='button' onClick={onClose} className='cancel-action-button'>Cancel</button>
+            <button type='submit' className='save-changes-action-button'>Save Changes</button>
         </div>
       </form>
     </div>
