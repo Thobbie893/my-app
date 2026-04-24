@@ -1,7 +1,7 @@
 import React from 'react'
 import './Editmode.css'
 import calendar from '../images/Shape.png'
-
+import bin from '../images/Combined Shape (1).png'
 const Editmode = () => {
   return (
     <div className='edit-form'>
@@ -80,6 +80,41 @@ const Editmode = () => {
         <div className='project-description-container'>
             <label>Project Description</label>
             <input className='project-description-input-field' type="text" placeholder='Enter your project' />
+        </div>
+
+        <div className='product-details'>
+            <h2>Item List</h2>
+            <div className='product-details-table'>
+            <div className='item-name'>
+                <p>Item Name</p>
+                <h4>Banner Design</h4>
+                <h4>Email Design</h4>
+            </div>
+            <div className='qty-number'>
+                <p>Qty</p>
+                <h4>1</h4>
+                <h4 className='qty-number-two'>2</h4>
+            </div>
+            <div className='price-tag'>
+                <p>Price</p>
+                <h4 className='first-price-tag'>156.00</h4>
+                <h4 className='second-price-tag'>200.00</h4>
+            </div>
+            <div className='total-price'>
+                <p>Total</p>
+                <h4 className='first-total-price'>156.00</h4>
+                <h4 className='second-total-price'>400.00</h4>
+            </div>
+            <div className='delete-icon'>
+            <img className='delete-icon-one' src={bin} alt="" /><br></br>
+            <img className='delete-icon-two' src={bin} alt="" />
+            </div>
+            </div>
+        </div>
+        <button className='add-CTA-button'>+ Add New Item</button>
+        <div className='form-action-buttons'>
+            <button className='cancel-action-button'>Cancel</button>
+            <button className='save-changes-action-button'>Save Changes</button>
         </div>
       </form>
     </div>

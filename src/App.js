@@ -19,7 +19,7 @@ function App() {
     
     {/* <Invoicesempty/> */}
     {/* <Realinvoice/> */}
-    {/* <Editinvoice/> */}
+    <Editinvoice/>
     <Editmode/>
   </div>
     

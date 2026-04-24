@@ -6,24 +6,28 @@
     margin-bottom: 24px;
     cursor: pointer;
     height: 100vh;
-    border-right: 1px solid black;
-    display: flex;  
+    border-right: 1px solid black;  
     position: fixed;
     left: 6%;
     z-index: 50;
     padding-left: 4%;
     padding-top: 2%;
+    padding-right: 2%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: white;
     overflow-y: auto;
     overflow-x: hidden;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 
 body{
     overflow-y: auto;
     overflow-x: hidden;
+    height: auto;
+    
 }
 form p{
     margin-top: 46px;
@@ -34,7 +38,7 @@ form p{
 }
 
 .address-input-field{
-    width: 504px;
+    width: 100%;
     height: 48px;
     padding: 2%;
 }
@@ -45,7 +49,7 @@ form p{
 
 .city-form-input-group{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: relative;
     right: 2%;
     margin-top: 25px ;
@@ -56,6 +60,7 @@ form p{
     height: 48px;
     margin-right: 21%;
     padding: 2%;
+    box-sizing: border-box;
 }
 
 .client-name-input-field{
@@ -73,7 +78,7 @@ form p{
 }
 
 .client-email-input-field{
-    width: 504px;
+    width: 100%;
     height: 48px;
     padding: 2%;
 }
@@ -99,11 +104,397 @@ form p{
 }
 
 .project-description-input-field{
-    width: 504px;
+    width: 100%;
     height: 48px;
 }
 
 .project-description-container{
     margin-top: 24px;
 }
+
+.product-details h2{
+    margin-top: 35px;
+}
+
+.product-details-table{
+    display: flex;
+    justify-content: space-around;
+}
+
+.delete-icon-one, .delete-icon-two{
+    width: 12px;
+    height: 16px;
+    
+}
+
+.delete-icon-one{
+ position: relative;
+ top: 45%;
+}
+
+.delete-icon-two{
+    position: relative;
+    top: 74%;
+}
+
+.item-name h4{
+    width: 214px;
+    height: 48px;
+    border: 1px solid #DFE3FA;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.qty-number h4{
+    width: 46px;
+    height: 48px;
+    border: 1px solid #DFE3FA;
+    padding: 4%;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 14%;
+    display: flex;
+    flex-direction: column;
+}
+
+.qty-number p{
+    color: #7E88C3;
+}
+
+
+.body{
+    background-color: #F8F8FB;
+}
+
+.real-invoice-main-container{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-self: flex-start;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.real-invoice-main-container h4{
+    font-weight: 700;
+    position: relative;
+    right: 38%;
+    margin-top: 2%;   
+}
+
+.action-buttons-main-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6%;
+    justify-content: space-between;
+    width: 830px;
+    height: 88px;
+    position: relative;
+    right: -4%;
+    background-color: white;
+    box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.1);
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 8px;
+    position: relative;
+    right: 45%; 
+}
+
+.status-indicator{
+    display: flex;
+    gap: 20px;
+    margin-block: 4%;
+}
+
+.Pending-status-indicator{
+    width: 104px;
+    height: 40px;
+    background-color: #F3ECE4;
+    text-align: center;
+    justify-content: center;
+    padding-block: 4%;
+    padding-inline: 4%;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #FF8F00;
+    margin-block: -4%;
+    
+}
+
+.action-buttons-container{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-block: 3%;
+}
+
+.edit-button{
+    background-color: #F9FAFE;
+    width: 73px;
+    height: 48px;
+    padding: 18px;
+    border-radius: 24px;
+    color: #7E88C3;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: league spartan;
+}
+
+.delete-button{
+    background-color: #EC5757;
+    width: 89px;
+    height: 48px;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: league spartan;
+    border-radius: 24px;
+}
+
+.status-button{
+    width: 131px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: league spartan;
+    background-color: #7C5DFA;
+    color: white;
+    border-radius: 24px;
+    border: none;
+}
+
+.invoice-container{
+    width: 93%;
+    height: 550px;
+    background-color: white;
+    position: relative;
+    right: 38%;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.id-address-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+}
+
+.client-id-course p{
+    margin-top: 7px;
+    color: #7E88C3;
+}
+
+.client-address p{
+    color: #7E88C3;
+}
+
+.invoice-details{
+    display: flex;
+    justify-content: space-around;
+    padding: 4%;
+    position: relative;
+    right: 9%;
+    bottom: 49px;
+}
+
+.invoice-date p, .client-name p, .client-gmail p{
+    margin-bottom: 13px;
+    color: #7E88C3;
+}
+
+.clients-payment-date-address-container{
+    display: flex;
+    gap: 118px;
+    position: relative;
+    right: -4%;
+    margin-block: -7%;
+}
+
+.invoice-due-date p{
+    margin-bottom: 13px;
+    color: #7E88C3;
+}
+
+.client-address p{
+   color: #7E88C3; 
+}
+
+.overall-receipt-container{
+    background-color: #F9FAFE;
+    margin-top: 75px;  
+    margin-inline: 8%;
+    height: 184px;
+    border-radius: 8px;
+}
+
+.invoice-details{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    position: relative;
+    left: -8%;
+    
+}
+
+.invoice-calculations{
+    display: flex;
+    justify-content: space-around;
+    width: 282px;
+}
+
+.invoice-quantity{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4%;
+    padding-inline: 4%;
+}
+
+.item-name h4, .quantity h4, .price h4, .total h4{
+    margin-top: 32px;
+}
+
+.item-name p, .quantity p, .price p, .total p{
+    color: #7E88C3;
+}
+
+.invoice-due-date{
+    margin-top: 31px;
+}
+
+.amount-due-container{
+    background-color: #373B53;
+    color: white;
+    margin-top: 4%;
+    padding: 4%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.qty-number-two{
+    margin-top: 74%;
+}
+
+.first-price-tag {
+    width: 100px;
+    height: 48px;
+    border: 1px solid #DFE3FA;
+    padding: 2%;
+    margin-top: 14%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 8%;
+}
+
+.second-price-tag {
+    width: 100px;
+    height: 48px;
+    border: 1px solid #DFE3FA;
+    padding: 2%;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 1%;
+}
+
+
+.price-tag p,.total-price p{
+    color: #7E88C3;
+}
+
+.second-price-tag{
+    margin-top: 50%;
+    width: 100px;
+    height: 48px;
+    border: 1px solid #DFE3FA;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.first-total-price{
+    margin-top: 80%;
+}
+
+.second-total-price{
+    margin-top: 125%;
+}
+
+.delete-icon-one{
+    margin-top: 24%;
+}
+
+.add-CTA-button{
+    width: 100%;
+    height: 48px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    border: none;
+    background-color: #F9FAFE;
+    color: #7E88C3;
+    font-weight: 600;
+    font-family: league spartan;
+}
+
+.cancel-action-button{
+    width: 96px;
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    background-color: #F9FAFE;
+    color: #7E88C3;
+    font-family: league spartan;
+    font-weight: 600;
+}
+
+.save-changes-action-button{
+   width: 138px;
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    background-color: #7C5DFA;
+    color: white;
+    font-family: league spartan;
+    font-weight: 600;
+    margin-left: 8px; 
+}
+
+.form-action-buttons{
+    margin-left: 318px;
+    margin-top: 24px;
+    display: flex;
+    gap: 8px;
+}
+
+
+
+
+
+
+
+
 

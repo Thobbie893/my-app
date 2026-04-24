@@ -26,8 +26,6 @@ body{
   margin-bottom: 42%;
 }
 
-
-
 .invoices-page-wrapper{
   display: flex;
   flex-direction: column;
@@ -43,8 +41,7 @@ body{
   position: relative;
   bottom: 40%;  
   right: 0 auto;
-  left: 0 auto;
-  
+  left: 0 auto; 
 }
 
 .empty-state-container img{
