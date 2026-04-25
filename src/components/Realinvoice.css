@@ -2,7 +2,7 @@ body{
     background-color: #F8F8FB;
 }
 
-.backdrop {
+.form-backdrop {
     position: fixed;
     top: 0;
     left: 0;
