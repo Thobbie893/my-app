@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Invoicesfilled.css'
 import circle from '../images/Group 3.png'
 import Invoicecard from './database/Invoicecard'
 import { invoice } from './database/data'
+import { invoice as initialData } from './database/data'
 
 const Invoicesfilled = () => {
+  const[invoices, setInvoices] = useState(()=>{
+    const savedInvoices = localStorage.getItem('invoices');
+    return savedInvoices ? JSON.parse(savedInvoices) : initialData
+
+    useEffect(('invoices', JSON.stringify(invoices)),[invoices])
+  })
   return (
     
     <div className='invoices-container'>

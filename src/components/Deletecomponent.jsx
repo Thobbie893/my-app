@@ -8,8 +8,8 @@ const Deletecomponent = ({onCancel}) => {
       <h2>Confirm Deletion</h2>
       <p>Are you sure you want to delete invoice #XM9141? This action cannot be undone</p>
       <div className='delete-cancel-action-buttons'>
-        <button onClick={onCancel} className='cancel-action-button'>Cancel</button>
-        <button className='delete-button'>Delete</button>
+        <button type='button' onClick={onCancel} className='cancel-action-button'>Cancel</button>
+        <button type='button' className='delete-button'>Delete</button>
       </div>
     </div>
     </div>

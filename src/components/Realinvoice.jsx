@@ -4,10 +4,11 @@ import Editmode from './Editmode'
 import { useState } from 'react'
 import Deletecomponent from './Deletecomponent'
 
-const Realinvoice = () => {
+const Realinvoice = ({invoiceData, setAllInvoices}) => {
     const [isEditing, setIsEditing] = useState(false)
     const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false)
 
+    
     const handleDeleteClick = ()=>{
         setIsDeleteModalOpen(true)
     }
@@ -15,15 +16,19 @@ const Realinvoice = () => {
     const closeDeleteModal = () =>{
         setIsDeleteModalOpen(false)
     }
+
+    const confirmDelete = () =>{
+        setIsDeleteModalOpen(false)
+    }
+
+    
   return (
+    <>
+    
+    
 
     <div className='main-container'>
-        {isEditing &&(
-            <>
-            <div className='backdrop' onClick={() => setIsEditing(false)} />
-            <Editmode onClose={() => setIsEditing(false)} />
-            </>
-        )}
+        
     <div className='real-invoice-main-container'>
       <h4>Go back</h4>
       <div className='action-buttons-main-container'>
@@ -40,12 +45,18 @@ const Realinvoice = () => {
                 <button onClick={()=>setIsEditing(true)} className='edit-button'>Edit</button>
             
                 <button onClick={handleDeleteClick} className='delete-button'>Delete</button>
+
+                
             
                 <button className='status-button'>Mark as Paid</button>
+
+                
             
         </div>
       </div>
       
+    
+
     </div>
     <div className='invoice-container'>
         <div className='id-address-container'>
@@ -124,10 +135,39 @@ const Realinvoice = () => {
             </div>
         </div>
     </div>
+    
+
+
     {isDeleteModalOpen && (
-        <Deletecomponent onCancel={closeDeleteModal}/>
+            <Deletecomponent 
+                onCancel={() => setIsDeleteModalOpen(false)} 
+                onConfirm={confirmDelete} 
+            />
+        )}
+
+        {isDeleteModalOpen && (
+        <Deletecomponent 
+            onCancel={closeDeleteModal}
+            onConfirm={confirmDelete} 
+        />
     )}
+
+        {isEditing && (
+                <>
+                    
+                    <div className="form-backdrop" onClick={() => setIsEditing(false)} />
+                    
+                    <Editmode 
+                        invoiceData={invoiceData} 
+                        setAllInvoices={setAllInvoices} 
+                        onClose={() => setIsEditing(false)} 
+                    />
+                </>
+            )}
+
+    
     </div>
+    </>
   )
 }
 

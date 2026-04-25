@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Invoicesempty.css'
 import circle from '../images/Group 3.png'
 import emailcampaign from '../images/Email campaign_Flatline 2.png'
 
 const Invoicesempty = () => {
+  const[isInvoiceEmpty, setIsInvoiceEmpty] = useState(false)
+
+  useEffect(()=>{
+    const savedInvoices = localStorage.getItem('invoices');
+    if (savedInvoices) {
+      const parsedData = JSON.parse(savedInvoices);
+      if(parsedData.length > 0){
+        setHasData(true);
+      }
+    }
+  },[])
   return (
     <div className='invoices-page-wrapper'>
     <div className='header-container'>

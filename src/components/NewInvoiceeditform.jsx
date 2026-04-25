@@ -1,20 +1,11 @@
-import React from 'react'
-import './Editmode.css'
-import calendar from '../images/Shape.png'
-import bin from '../images/Combined Shape (1).png'
-const Editmode = ({ onClose}) => {
+import React from 'react';
 
 
-
-   
-
-   
-   
-
+const NewInvoiceeditform = () => {
   return (
-    <div className='edit-form'>
+    <div>
       <form>
-        <h2>Edit #XM9141</h2>
+        <h2>New Invoice</h2>
         <p>Bill from</p>
 
     <div className='form-input-group'>
@@ -126,7 +117,9 @@ const Editmode = ({ onClose}) => {
         </div>
       </form>
     </div>
-  )
- };
 
-export default Editmode
+    
+  )
+}
+
+export default NewInvoiceeditform
